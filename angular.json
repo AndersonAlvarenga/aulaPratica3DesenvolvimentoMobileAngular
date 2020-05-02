@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "pratica3"
+    }
+  },
+  "defaultProject": "pratica3",
+  "cli": {
+    "analytics": "5270cec4-76b8-4c57-935b-e878159ca874"
+  }
 }

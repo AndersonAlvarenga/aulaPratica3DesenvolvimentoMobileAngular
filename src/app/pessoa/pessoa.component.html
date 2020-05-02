@@ -1,0 +1,18 @@
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Detalhe</th>
+    </tr>
+    <tr *ngFor = 'let pessoas of pessoasArray'>
+        <td>{{pessoas.id}}</td>
+        <td>{{pessoas.name}}</td>
+        <td>{{pessoas.email}}</td>
+        <td><button (click)="detalheDaPessoa(pessoas.id)">Detalhe</button></td>
+    </tr>
+</table>
+<div *ngIf="detalhePessoa==true">
+    <h1>Detalhe da Pessoa</h1>
+    <app-pessoas-detalhe [dados]="pessoa" (atualizaDado)="alterarPessoa($event)"></app-pessoas-detalhe>
+</div>
